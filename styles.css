@@ -59,7 +59,7 @@ body {
 
 form > div {
     background-color: rgba(1, 1, 1, 0.5);
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 5px 5px black;
     padding: 30px;
     margin-top: 20px;
     margin-bottom: 40px;
@@ -92,6 +92,8 @@ label {
 }
 
 input {
+    color: white;
+    font-weight: 500;
     width: 200px;
     border-radius: 10px;
     background-color: rgb(34, 34 , 34);
@@ -103,20 +105,26 @@ input:focus {
     background-color: rgb(100, 100, 100);
 }
 
+input[type="password"]:user-invalid {
+    border: 1px solid red;
+}
+
 button {
     font-weight: 800;
     padding: 15px 40px;
     color: rgb(34, 34 , 34);
     background-color: #f1c761;
     border-radius: 10px;
-    border: 1px solid rgb(34, 34 , 34);
+    border: 1px solid #f1c761;
     margin: 0px 30px;
+    box-shadow: 4px 4px 4px black;
 }
 
 button:hover {
     background-color: rgb(235, 204, 132);
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgb(34, 34 , 34);
+    box-shadow: none;
 }
 
 div {
